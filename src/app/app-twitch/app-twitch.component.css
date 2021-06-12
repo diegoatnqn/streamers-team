@@ -1,0 +1,22 @@
+.display-3 {
+  font-size: 3rem;
+  font-family: Vendetta;
+  font-weight: 200;
+  color: #ff2244;
+  text-shadow: 3px 4px 5px rebeccapurple;
+  margin: 25px;
+  text-decoration: underline;
+  letter-spacing: 3.2px;
+  text-align:center;
+}
+section{
+    height:auto;
+}
+.card {
+  width: 18rem;
+}
+@media screen and (min-width:576px){
+    section{
+        height:85vh;
+    }
+}

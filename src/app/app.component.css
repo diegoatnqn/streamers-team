@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.letrasTexto {
+  font-size: 2rem;
+  font-family: Vendetta;
+  letter-spacing: 2px;
+}
+.bg-primary {
+  background-color: #212626 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,.8);
+}
+.content{
+    margin:0 auto 0 !important;
+}
+ul {
+  list-style-type: none;
+  color: deepskyblue;
+  font-weight: 500;
+}
+nav a img {
+  margin: 0rem 1rem;
+}
+h4:hover{
+    cursor:pointer !important;
+}
+
+.shimmer {
+  font-weight: 300;
+  margin: 0 auto;
+  /*padding: 0 30px 0 30px;*/
+  display: inline;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: "Lato";
+  font-weight: 300;
+  color: rgba(255,255,255,0.65);
+  width: 500px;
+  text-align: justify;
+  line-height: 1.5em;
+  padding-top: 10px;
+}
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+
+p a {
+  color: #fff;
+}
+
+  p a:visited {
+    color: #fff;
+  }
+
+.shimmer {
+  text-align: center;
+  color: rgba(255,255,255,0.1);
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+a:link {
+  text-decoration: none;
+}
+
+.site-footer {
+  background-color: #292929;
+  display:block;
+  padding-top:1em;
+}
+.site-footer p{
+    display:inline
+}
+
+.site-footer h3{
+    color:azure;
+    font-family:Vendetta;
+    letter-spacing:2px;
+    margin:11px 0;
+}
+.footer-links{
+    padding:0px;
+}
+.text-white {
+  margin-top: 1em;
+}

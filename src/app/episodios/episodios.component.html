@@ -1,0 +1,16 @@
+<section>
+  <p class="letrasEpisodio"> Mira los episodios anteriores </p>
+
+    <div *ngFor="let x of this.episodios;let i=index;" class="card"> <!-- Una card por episodio -->
+      <a [href]="x.url" class="stretched-link" target="_blank">
+        <img class="img-fluid img-thumbnail card-img-top" [src]="x.thumbnail" alt="Card image cap">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title">{{x.titulo}}</h5>
+        <p class="card-text">
+          {{x.descripcion}}
+        </p>
+
+      </div>
+    </div>
+</section>

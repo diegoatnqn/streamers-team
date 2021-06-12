@@ -1,0 +1,29 @@
+<ngb-carousel class="fondo" [interval]="4000" *ngIf="images" showNavigationArrows=true [showNavigationIndicators]="showNavigationIndicators">
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <a><img [src]="imageSrc[0]" alt="JUMBOTRON" border="0" class="imagenbanner img-fluid"></a>
+    </div>
+    <div class="carousel-caption">
+      <p class="display-4"> Su texto aqui</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <a><img [src]="imageSrc[1]" alt="imagen2" border="0" class="imagenbanner img-fluid"></a>
+    </div>
+    <div class="carousel-caption">
+      <p class="display-4"> Su texto aqui 1</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <a><img [src]="imageSrc[2]" alt="imagen2" border="0" class="imagenbanner img-fluid"></a>
+    </div>
+    <div class="carousel-caption">
+      <p class="display-4"> Su texto aqui 2</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<hr>
+

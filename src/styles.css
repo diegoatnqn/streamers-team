@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+.area {
+  text-align: center;
+  font-size: 1em;
+  color: #fff;
+  letter-spacing: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur 2.0s ease-in-out 8;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+@font-face {
+  font-family: 'Vendetta';
+  src: url(assets/font/Vendetta.otf) format('opentype');
+}
+@keyframes blur {
+  from {
+    text-shadow:
+        0px 0px 10px #fff,
+        0px 0px 10px #fff,
+        0px 0px 25px #4ece50,
+        0px 0px 25px #4ece50,
+        0px 0px 25px #4ece50,
+        0px 0px 25px #1bcb1d,
+        0px 0px 25px #1bcb1d,
+        0px 0px 25px #1bcb1d,
+        0px 0px 50px #2ee531,
+        0px 0px 50px #2ee531,
+        0px 0px 50px #2ee531,
+        0px 0px 150px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px -10px 100px #7B96B8,
+        0px -10px 100px #000000;
+  }
+}

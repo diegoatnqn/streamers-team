@@ -1,0 +1,31 @@
+<section>
+  <p class="display-3"> Streamers</p>
+  <div class="container">
+    <div class="card-deck">
+      <div *ngFor="let x of this.miembros;let i=index;" class="card"> <!-- div por cada usuario de arreglo -->
+        <img class="card-img-top" src="https://picsum.photos/200/150.jpg" alt="Cover del canal">  <!-- Cover aleatorio-->
+        <div class="card-body">
+          <h5 class="card-title">{{x.username}}</h5>
+          <p class="card-text">
+            {{x.descripcion}} <!-- Descripcion default (sera reemplazada por la del canal-->
+          </p>
+          <!-- Botones de accion -->
+        </div>
+        <a href="http://www.twitch.tv/{{x.channel_name}}" target="_blank" class="btn btn-success area shimmer" *ngIf="x.live">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+            <path d="M3.857 0L1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429l-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z" />
+            <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z" />
+          </svg>
+          VER EN VIVO!
+        </a>
+        <a href="http://www.twitch.tv/{{x.channel_name}}" target="_blank" ng-open="" class="btn btn-info" *ngIf="!x.live">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+            <path d="M3.857 0L1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429l-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z" />
+            <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z" />
+          </svg>
+          Ir al canal!
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
