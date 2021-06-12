@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from '../get-usuarios.service';
-import { GetTwitchService } from '../get-twitch.service';
+//import { GetTwitchService } from '../get-twitch.service';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-app-twitch',
@@ -12,7 +12,7 @@ export class AppTwitchComponent implements OnInit {
   miembros: Array<any> = [];
   vivos: Array<any> = [];
 
-  constructor(private service: UsuarioService, private api: GetTwitchService, private router: Router) {
+  constructor(private service: UsuarioService,/* private api: GetTwitchService,*/ private router: Router) {
     }   
   
   ngOnInit(): void {
